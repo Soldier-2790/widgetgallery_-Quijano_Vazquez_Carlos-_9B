@@ -42,6 +42,7 @@ class SingUpScreen extends StatelessWidget {
             content: const Text('You have successfully signed up!!!'),
             backgroundColor: Colors.green,
           );
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
         },
       ),
       bottomNavigationBar: BottomMenu(
