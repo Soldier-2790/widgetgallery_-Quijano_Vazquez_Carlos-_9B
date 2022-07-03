@@ -35,6 +35,15 @@ class SingUpScreen extends StatelessWidget {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.save),
+        onPressed: () {
+          const snackBar = SnackBar(
+            content: const Text('You have successfully signed up!!!'),
+            backgroundColor: Colors.green,
+          );
+        },
+      ),
       bottomNavigationBar: BottomMenu(
         items: AppRoute.listScreens,
       ),
