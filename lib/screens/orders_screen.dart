@@ -8,9 +8,10 @@ class OrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pinkAccent,
+      backgroundColor: Color.fromARGB(255, 64, 245, 255),
       appBar: AppBar(
-        title: const Text('Widget Gallery'),
+        title: const Text('Orders Screen...'),
+        backgroundColor: Colors.greenAccent.shade200,
       ),
       body: Center(
         child: Column(

@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Widget Gallery',
+      title: 'Mini proyecto',
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoute.root,
       routes: AppRoute.getRoutes(),

@@ -6,7 +6,6 @@ import '../widgets/buttom_menu.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
   @override
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromARGB(214, 9, 222, 90),

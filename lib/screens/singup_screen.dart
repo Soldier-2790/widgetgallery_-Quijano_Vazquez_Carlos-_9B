@@ -1,35 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:widgetgallery/models/models.dart';
 import 'package:widgetgallery/widgets/widgets.dart';
-
 import '../routes/app_routes.dart';
-import '../widgets/buttom_menu.dart';
 
 class SingUpScreen extends StatelessWidget {
   const SingUpScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purpleAccent,
+      backgroundColor: Color.fromARGB(255, 190, 5, 252),
       appBar: AppBar(
-        title: const Text('Widget Gallery'),
+        title: const Text('SingUp ...'),
+        backgroundColor: Color.fromARGB(255, 162, 0, 232),
       ),
       body: SingleChildScrollView(
         child: Form(
           child: Column(
-            children: <Widget>[
-              const InputForm(
+            children: const <Widget>[
+              InputForm(
                 labelText: 'Last Name',
                 hintText: 'Enter your last name',
                 icon: Icons.abc,
                 isRequired: true,
               ),
-              const InputForm(
+              InputForm(
                 labelText: 'Email',
                 hintText: 'Enter your email',
                 icon: Icons.email,
                 isRequired: true,
                 keyboardType: TextInputType.emailAddress,
+              ),
+              InputForm(
+                labelText: 'Phone number',
+                hintText: 'Declare su número telefonico',
+                icon: Icons.phone,
+                isRequired: false,
+                keyboardType: TextInputType.phone,
               ),
             ],
           ),
@@ -39,7 +45,7 @@ class SingUpScreen extends StatelessWidget {
         child: const Icon(Icons.save),
         onPressed: () {
           const snackBar = SnackBar(
-            content: const Text('You have successfully signed up!!!'),
+            content: Text('You have successfully signed up!!!'),
             backgroundColor: Colors.green,
           );
           ScaffoldMessenger.of(context).showSnackBar(snackBar);

@@ -10,7 +10,7 @@ class Student {
     this.gender = 0,
     this.country = '',
   });
-  factory Student.empty() => const Student(
+  factory Student.empty() => Student(
       firstName: '',
       lastName: '',
       email: '',

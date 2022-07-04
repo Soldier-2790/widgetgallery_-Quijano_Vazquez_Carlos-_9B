@@ -8,9 +8,10 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amberAccent,
+      backgroundColor: Color.fromARGB(255, 205, 165, 20),
       appBar: AppBar(
-        title: const Text('Widget Gallery'),
+        title: const Text('Profile Screen...'),
+        backgroundColor: Color.fromARGB(255, 167, 167, 37),
       ),
       body: Center(
         child: Column(
