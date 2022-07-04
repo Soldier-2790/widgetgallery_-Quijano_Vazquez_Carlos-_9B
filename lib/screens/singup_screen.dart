@@ -8,10 +8,10 @@ class SingUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 190, 5, 252),
+      backgroundColor: const Color.fromARGB(213, 159, 42, 249),
       appBar: AppBar(
         title: const Text('SingUp ...'),
-        backgroundColor: Color.fromARGB(255, 162, 0, 232),
+        backgroundColor: const Color.fromARGB(255, 81, 0, 232),
       ),
       body: SingleChildScrollView(
         child: Form(
